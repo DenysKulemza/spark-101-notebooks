@@ -1,0 +1,13 @@
+# Generated sample data (notebooks create these at runtime)
+*.csv
+*.txt
+*.parquet
+*.json
+
+# Python / Jupyter
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
