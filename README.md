@@ -8,7 +8,9 @@ Hands-on notebooks for the **Spark 101** course. Every lecture's live demo lives
 2. Click **Add → Add repo** and paste this repository's HTTPS URL.
 3. Open any notebook and attach it to a running cluster.
 
-All demos are **self-contained** — they generate their own sample data (temp files) or use built-in Databricks sample datasets. No uploads required, runs on Databricks Free.
+All demos are **self-contained** — they generate their own sample data (temp files) or use built-in Databricks sample datasets. No uploads required, runs on Databricks Free (**serverless** compute).
+
+> **One exception — `module_4_rdds/13_rdd_operations.ipynb`.** It teaches the RDD API (`sc.parallelize`, `map`, `reduceByKey`, ...), which serverless compute blocks. Run that one notebook on a **Dedicated (classic) access-mode** cluster. Every other notebook runs on serverless as-is.
 
 > One exception: `module_1_why_spark/03_what_is_spark.ipynb` can use Shakespeare text. The notebook's first cell downloads it to `/tmp`; `download_shakespeare.sh` is provided if you'd rather fetch it manually.
 
